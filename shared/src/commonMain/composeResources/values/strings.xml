@@ -1,0 +1,163 @@
+<resources>
+
+    <!-- ======================== -->
+    <!-- Ações comuns             -->
+    <!-- ======================== -->
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_close">Fechar</string>
+    <string name="action_confirm">Confirmar</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_delete">Excluir</string>
+    <string name="action_update">Atualizar</string>
+    <string name="action_define">Definir</string>
+    <string name="content_desc_back">Voltar</string>
+    <string name="content_desc_action">Ação</string>
+
+    <!-- ======================== -->
+    <!-- Login                    -->
+    <!-- ======================== -->
+    <string name="login_title">Despesa Simples</string>
+    <string name="login_subtitle">Controle suas despesas com facilidade</string>
+    <string name="login_terms">Ao continuar, você aceita os Termos de Uso</string>
+    <string name="login_google_button">Entrar com o Google</string>
+    <string name="content_desc_google_icon">Ícone do Google</string>
+    <string name="login_benefit_secure_title">Login seguro</string>
+    <string name="login_benefit_secure_desc">Seus dados protegidos pelo Google</string>
+    <string name="login_benefit_cloud_title">Sincronizado na nuvem</string>
+    <string name="login_benefit_cloud_desc">Acesse de qualquer dispositivo</string>
+    <string name="login_benefit_fast_title">Rápido e sem senha</string>
+    <string name="login_benefit_fast_desc">Um toque e você está dentro</string>
+
+
+    <!-- ======================== -->
+    <!-- Dashboard                -->
+    <!-- ======================== -->
+    <string name="dashboard_content_desc_menu">Abrir menu</string>
+    <string name="dashboard_edit_budget_title">Editar Orçamento</string>
+    <string name="dashboard_define_budget_title">Definir Orçamento</string>
+    <string name="dashboard_no_budget_dialog_title">Defina seu orçamento</string>
+    <string name="dashboard_no_budget_dialog_message">Para adicionar despesas, você precisa definir um orçamento mensal primeiro.</string>
+    <string name="dashboard_no_budget_dialog_confirm">Definir agora</string>
+    <string name="dashboard_no_budget_dialog_dismiss">Agora não</string>
+
+    <!-- Dashboard — Header -->
+    <string name="dashboard_header_content_desc_menu">Perfil</string>
+    <string name="dashboard_header_content_desc_profile">Perfil</string>
+    <string name="dashboard_header_greeting">Olá, %1$s!</string>
+    <string name="dashboard_header_loading">Carregando…</string>
+    <string name="dashboard_header_subtitle">Controle suas despesas</string>
+    <string name="dashboard_header_content_desc_prev_month">Mês anterior</string>
+    <string name="dashboard_header_content_desc_next_month">Próximo mês</string>
+    <string name="dashboard_header_budget_label">ORÇAMENTO</string>
+    <string name="dashboard_header_budget_monthly">mensal</string>
+    <string name="dashboard_header_spent_label">GASTO</string>
+    <string name="dashboard_header_spent_percentage">%1$s do orçamento</string>
+    <string name="dashboard_header_budget_of">de %1$s</string>
+    <string name="dashboard_header_content_desc_details">Ver detalhes</string>
+    <string name="dashboard_header_content_desc_chart">Ver resumo financeiro</string>
+
+    <!-- Dashboard — Componentes -->
+    <string name="dashboard_set_budget_loading">Configurando orçamento…</string>
+    <string name="dashboard_set_budget_button">Definir Orçamento Mensal</string>
+    <string name="dashboard_summary_title">Resumo do mês</string>
+    <string name="dashboard_summary_budget_label">Orçamento</string>
+    <string name="dashboard_summary_spent_label">Gasto</string>
+    <string name="dashboard_summary_to_pay_label">A pagar</string>
+    <string name="dashboard_summary_remaining_label">Restante</string>
+    <string name="dashboard_budget_warning_content_desc">Alerta</string>
+    <string name="dashboard_budget_warning_message">CUIDADO! Só %1$s sobrando!</string>
+    <string name="dashboard_expense_content_desc_paid">Pago</string>
+    <string name="dashboard_expense_content_desc_pending">Pendente</string>
+    <string name="dashboard_expense_installments_counter">%1$d/%2$dx</string>
+
+    <!-- ======================== -->
+    <!-- Estado vazio             -->
+    <!-- ======================== -->
+    <string name="empty_state_title">Nenhuma despesa ainda</string>
+    <string name="empty_state_description">Comece adicionando sua primeira despesa usando o botão + abaixo!</string>
+
+    <!-- ======================== -->
+    <!-- Dialog de orçamento      -->
+    <!-- ======================== -->
+    <string name="action_dialog_budget_label">Orçamento</string>
+    <string name="action_dialog_budget_placeholder">R$ 0,00</string>
+    <string name="action_dialog_update_budget_title">Atualizar orçamento</string>
+
+    <!-- ======================== -->
+    <!-- Adicionar Despesa        -->
+    <!-- ======================== -->
+    <string name="add_expense_screen_title">Adicionar Despesa</string>
+    <string name="add_expense_select_button">Selecionar</string>
+    <string name="add_expense_basic_info_section">Informações básicas</string>
+    <string name="add_expense_name_label">Nome da despesa</string>
+    <string name="add_expense_name_placeholder">Ex: Conta de luz</string>
+    <string name="add_expense_amount_label">Valor</string>
+    <string name="add_expense_amount_placeholder">0,00</string>
+    <string name="add_expense_due_date_label">Vencimento</string>
+    <string name="add_expense_due_date_placeholder">Selecione uma data</string>
+    <string name="add_expense_fallback_name">esta despesa</string>
+    <string name="add_expense_repeat_section">Configurações de repetição</string>
+    <string name="add_expense_repeat_toggle">Se repete</string>
+    <string name="add_expense_installments_label">Quantidade de parcelas</string>
+    <string name="add_expense_installments_placeholder">Ex: 2</string>
+    <string name="add_expense_save_button">Salvar despesa</string>
+    <string name="add_expense_update_button">Atualizar despesa</string>
+    <string name="add_expense_repeat_fixed_title">Fixa</string>
+    <string name="add_expense_repeat_fixed_desc">Repete todo mês automaticamente</string>
+    <string name="add_expense_repeat_installment_title">Parcelada</string>
+    <string name="add_expense_repeat_installment_desc">Dividir em várias parcelas</string>
+    <string name="add_expense_amount_total">Valor total</string>
+    <string name="add_expense_amount_installment">Valor parcela</string>
+
+    <!-- ======================== -->
+    <!-- Editar Despesa           -->
+    <!-- ======================== -->
+    <string name="edit_expense_screen_title">Editar Despesa</string>
+    <string name="edit_expense_save_button">Salvar Alterações</string>
+
+    <!-- ======================== -->
+    <!-- Detalhes da Despesa      -->
+    <!-- ======================== -->
+    <string name="expense_details_screen_title">Detalhes</string>
+    <string name="expense_details_content_desc_delete">Excluir</string>
+    <string name="expense_details_due_date_label">Vencimento</string>
+    <string name="expense_details_status_label">Status</string>
+    <string name="expense_details_type_label">Tipo</string>
+    <string name="expense_details_installments_label">Parcelas</string>
+    <string name="expense_details_mark_paid_button">Marcar como paga</string>
+    <string name="expense_details_mark_pending_button">Marcar como pendente</string>
+    <string name="expense_details_edit_button">Editar</string>
+    <string name="expense_details_delete_title">Excluir %1$s</string>
+    <string name="expense_details_delete_message">Tem certeza que deseja excluir %1$s? Esta ação não pode ser desfeita.</string>
+
+    <!-- ======================== -->
+    <!-- Dialog de escopo         -->
+    <!-- ======================== -->
+    <string name="scope_dialog_delete_title">Excluir</string>
+    <string name="scope_dialog_edit_title">Editar</string>
+    <string name="scope_dialog_installment_delete_text">Como deseja excluir esta despesa parcelada?</string>
+    <string name="scope_dialog_installment_edit_text">Esta é uma despesa parcelada. Como deseja aplicar as alterações?</string>
+    <string name="scope_dialog_recurring_delete_text">Esta é uma despesa recorrente (fixa).\n\nAo excluir, a mudança será aplicada a todos os meses permanentemente.</string>
+    <string name="scope_dialog_recurring_edit_text">Esta é uma despesa recorrente (fixa).\n\nAo alterar, a mudança será aplicada a todos os meses permanentemente.</string>
+    <string name="scope_dialog_single_delete_text">Tem certeza que deseja excluir esta despesa?\nEsta ação não pode ser desfeita.</string>
+    <string name="scope_dialog_single_edit_text">Tem certeza que deseja alterar esta despesa?\nEsta ação não pode ser desfeita.</string>
+    <string name="scope_dialog_this_and_future_title">Desta e das futuras</string>
+    <string name="scope_dialog_this_and_future_subtitle">Aplica às parcelas atuais e próximas</string>
+    <string name="scope_dialog_this_only_title">Apenas desta</string>
+    <string name="scope_dialog_all_series_title">Toda a série</string>
+    <string name="scope_dialog_all_series_subtitle">Apaga o histórico e parcelas futuras</string>
+    <string name="scope_dialog_recurring_delete_button">Excluir permanentemente</string>
+    <string name="scope_dialog_recurring_edit_button">Alterar em todos os meses</string>
+    <string name="scope_dialog_single_delete_button">Excluir</string>
+    <string name="scope_dialog_single_edit_button">Confirmar alterações</string>
+
+    <!-- ======================== -->
+    <!-- Navegação / Drawer       -->
+    <!-- ======================== -->
+    <string name="app_name">Prumo App</string>
+    <string name="drawer_content_desc_trend">Trend</string>
+    <string name="drawer_home_label">Home</string>
+    <string name="drawer_logout_button">Sair</string>
+
+</resources>
+
