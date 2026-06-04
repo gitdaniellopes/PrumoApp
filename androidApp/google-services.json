@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "623253818323",
+    "project_id": "prumoapp-b9bc4",
+    "storage_bucket": "prumoapp-b9bc4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623253818323:android:8dbdc3827b1b9f2162bd26",
+        "android_client_info": {
+          "package_name": "br.com.prumoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623253818323-pu7r330j2hkl30c83i2hfer4tmndb453.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBObPsOR78cW7EbO7IyQCiR0u-A5QVOu9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623253818323-pu7r330j2hkl30c83i2hfer4tmndb453.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
