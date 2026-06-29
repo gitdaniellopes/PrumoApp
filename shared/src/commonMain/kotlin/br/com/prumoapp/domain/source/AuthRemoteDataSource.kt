@@ -9,7 +9,7 @@ interface AuthRemoteDataSource {
 
     val currentUser: AuthUser?
     fun observeAuthState(): Flow<AuthUser?>
-    suspend fun loginEithGoogle(credential: AuthCredentialData): Result<SocialSignInResult>
+    suspend fun loginWithGoogle(credential: AuthCredentialData): Result<SocialSignInResult>
     suspend fun signOut()
     suspend fun deleteCurrentUser(): Result<Unit>
 }
