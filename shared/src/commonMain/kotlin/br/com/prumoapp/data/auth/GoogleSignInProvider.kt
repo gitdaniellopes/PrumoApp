@@ -11,7 +11,7 @@ interface GoogleSignInProvider {
 expect fun rememberGoogleAuthUiProvider(): GoogleSignInProvider
 
 sealed class GoogleSignInResult {
-    data class Credential(val idToken: String, val accessToken: String) : GoogleSignInResult()
+    data class Credential(val idToken: String, val accessToken: String? = null) : GoogleSignInResult()
     data class SignedInUser(val user: User) : GoogleSignInResult()
     data class Error(val message: String) : GoogleSignInResult()
 }

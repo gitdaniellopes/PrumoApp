@@ -29,6 +29,13 @@
             {
               "client_id": "623253818323-pu7r330j2hkl30c83i2hfer4tmndb453.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "623253818323-drtgb5ghds6bs95aqbu1073d0kplv9a5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.prumoapp.PrumoApp"
+              }
             }
           ]
         }

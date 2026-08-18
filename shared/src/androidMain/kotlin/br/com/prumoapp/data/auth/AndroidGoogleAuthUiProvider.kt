@@ -48,8 +48,7 @@ class AndroidGoogleAuthUiProvider(
             try {
                 val googleIdTokenCredential = GoogleIdTokenCredential.createFrom(credential.data)
                 GoogleSignInResult.Credential(
-                    idToken = googleIdTokenCredential.idToken,
-                    accessToken = ""
+                    idToken = googleIdTokenCredential.idToken
                 )
             } catch (e: GoogleIdTokenParsingException) {
                 AppLogger.e(TAG, "Erro ao processar token do google: ${e.message}", e)
