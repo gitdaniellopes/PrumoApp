@@ -17,14 +17,11 @@ dependencies {
 
     implementation(libs.androidx.activity.compose)
 
-
     // Firebase nativo Bom
     implementation(project.dependencies.platform(libs.firebase.bom))
     implementation(libs.firebase.analytics)
 
     implementation(libs.androidx.core.splashscreen)
-
-    implementation(libs.napier)
 
     implementation(libs.compose.uiToolingPreview)
     debugImplementation(libs.compose.uiTooling)
@@ -33,6 +30,10 @@ dependencies {
 android {
     namespace = "br.com.prumoapp"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
+
+    buildFeatures {
+        buildConfig = true
+    }
 
     defaultConfig {
         applicationId = "br.com.prumoapp"
