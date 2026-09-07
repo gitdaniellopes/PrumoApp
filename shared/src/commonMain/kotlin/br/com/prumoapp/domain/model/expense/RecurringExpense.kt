@@ -1,8 +1,11 @@
 package br.com.prumoapp.domain.model.expense
 
+import br.com.prumoapp.domain.billing.DueDateCalculator
 import br.com.prumoapp.domain.model.common.Money
 import br.com.prumoapp.domain.model.user.UserId
 import kotlinx.datetime.LocalDate
+import kotlinx.datetime.YearMonth
+import kotlin.time.Clock
 import kotlin.time.Instant
 
 data class RecurringExpense(
@@ -23,4 +26,28 @@ data class RecurringExpense(
         get() = startDate
 
     override fun withUserId(newUserId: UserId): Expense = copy(userId = newUserId)
+
+    fun materializeFor(
+        yearMonth: YearMonth,
+        paid: Boolean = false,
+        now: Instant = Clock.System.now()
+    ): FixedInstanceExpense {
+        val dueDate = DueDateCalculator.calculate(dueDay, yearMonth)
+
+        return FixedInstanceExpense(
+            id = ExpenseId.UNASSIGNED,
+            userId = userId,
+            name = name,
+            amount = amount,
+            parentExpenseId = id,
+            createdAt = now,
+            updatedAt = null,
+            dueDate = dueDate,
+            paymentStatus = if (paid) {
+                PaymentStatus.Paid(now)
+            } else {
+                PaymentStatus.Pending
+            }
+        )
+    }
 }
