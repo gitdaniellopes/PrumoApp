@@ -10,11 +10,12 @@ data class StandardExpense(
     override val userId: UserId,
     override val name: ExpenseName,
     override val amount: Money,
-    override val parentExpenseId: ExpenseId,
-    override val createdAt: Instant,
-    override val updatedAt: Instant,
-    override val dueDate: LocalDate,
+    override val parentExpenseId: ExpenseId? = null,
+    override val createdAt: Instant? = null,
+    override val updatedAt: Instant? = null,
+
     val paymentStatus: PaymentStatus = PaymentStatus.Pending,
+    override val dueDate: LocalDate,
     val notes: String? = null
 ) : Expense {
     override val kind: ExpenseKind = ExpenseKind.STANDARD

@@ -13,11 +13,11 @@ data class InstallmentExpense(
     override val parentExpenseId: ExpenseId? = null,
     override val createdAt: Instant? = null,
     override val updatedAt: Instant? = null,
-    override val kind: ExpenseKind,
     override val dueDate: LocalDate,
     val installmentNumber: InstallmentNumber,
     val payment: PaymentStatus = PaymentStatus.Pending,
     val repeatType: RepeatType = RepeatType.INSTALLMENT
 ) : Expense {
+    override val kind: ExpenseKind = ExpenseKind.INSTALLMENT
     override fun withUserId(newUserId: UserId): Expense = copy(userId = newUserId)
 }
