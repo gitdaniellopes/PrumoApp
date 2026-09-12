@@ -12,5 +12,5 @@ interface StandardExpenseRepository {
     suspend fun add(userId: UserId, expense: StandardExpense): Result<ExpenseId>
     suspend fun update(userId: UserId, expense: StandardExpense): Result<Unit>
     suspend fun delete(userId: UserId, expenseId: ExpenseId): Result<Unit>
-    suspend fun togglePaid(userId: UserId, expenseId: ExpenseId): Result<Unit>
+    suspend fun togglePaid(userId: UserId, expenseId: ExpenseId): Result<Boolean>
 }

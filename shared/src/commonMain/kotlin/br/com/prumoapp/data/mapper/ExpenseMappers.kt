@@ -10,7 +10,6 @@ import br.com.prumoapp.domain.model.expense.DueDay
 import br.com.prumoapp.domain.model.expense.Expense
 import br.com.prumoapp.domain.model.expense.ExpenseId
 import br.com.prumoapp.domain.model.expense.ExpenseName
-import br.com.prumoapp.domain.model.expense.ExpenseUpdate
 import br.com.prumoapp.domain.model.expense.FixedInstanceExpense
 import br.com.prumoapp.domain.model.expense.InstallmentExpense
 import br.com.prumoapp.domain.model.expense.InstallmentNumber
@@ -162,6 +161,26 @@ private fun ExpenseFirestore.toPaymentStatus(): PaymentStatus =
         PaymentStatus.Pending
     }
 
+
+fun Expense.toFirestoreUpdateMap(): Map<String, Any?> {
+    val firestoreModel = toFirestore()
+
+    return mapOf(
+        "name" to firestoreModel.name,
+        "amount" to firestoreModel.amount,
+        "dueDate" to firestoreModel.dueDate,
+        "paid" to firestoreModel.paid,
+        "paidAt" to firestoreModel.paidAt,
+        "repeatType" to firestoreModel.repeatType,
+        "installment" to firestoreModel.installment,
+        "currentInstallment" to firestoreModel.currentInstallment,
+        "totalInstallments" to firestoreModel.totalInstallments,
+        "parentExpenseId" to firestoreModel.parentExpenseId,
+        "dueDay" to firestoreModel.dueDay,
+        "updatedAt" to FieldValue.serverTimestamp
+    )
+}
+/*
 fun ExpenseUpdate.toFirebaseMap(): Map<String, Any?> = mapOf(
     "name" to name.name,
     "amount" to amount.cents / 100.0,
@@ -177,7 +196,9 @@ fun ExpenseUpdate.toFirebaseMap(): Map<String, Any?> = mapOf(
     "updatedAt" to FieldValue.serverTimestamp
 )
 
-fun Expense.tpUpdateMap(adjustedDate: LocalDate): Map<String, Any?> = mapOf(
+ */
+
+fun Expense.toFirestoreUpdateMap(adjustedDate: LocalDate): Map<String, Any?> = mapOf(
     "name" to name.name,
     "amount" to amount.cents / 100.0,
     "dueDate" to adjustedDate.toUtcTimestamp(),
