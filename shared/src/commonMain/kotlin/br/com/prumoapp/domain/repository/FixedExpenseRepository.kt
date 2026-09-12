@@ -15,7 +15,7 @@ interface FixedExpenseRepository {
         yearMonth: YearMonth
     ): ResultFlow<List<RecurringExpense>>
 
-    suspend fun ddTemplate(userId: UserId, template: RecurringExpense): Result<ExpenseId>
+    suspend fun addTemplate(userId: UserId, template: RecurringExpense): Result<ExpenseId>
     suspend fun updateTemplate(userId: UserId, template: RecurringExpense): Result<Unit>
     suspend fun deleteTemplate(userId: UserId, templateId: ExpenseId): Result<Unit>
 

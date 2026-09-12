@@ -1,8 +1,10 @@
 package br.com.prumoapp.di
 
 import br.com.prumoapp.data.source.FirebaseAuthDataSourceImpl
+import br.com.prumoapp.data.source.FirebaseExpenseDataSourceImpl
 import br.com.prumoapp.data.source.FirestoreUserDataSourceImpl
 import br.com.prumoapp.domain.source.AuthRemoteDataSource
+import br.com.prumoapp.domain.source.ExpenseDataSource
 import br.com.prumoapp.domain.source.UserRemoteDataSource
 import dev.gitlive.firebase.Firebase
 import dev.gitlive.firebase.auth.auth
@@ -17,4 +19,5 @@ val dataSourceModule = module {
 
     singleOf(::FirestoreUserDataSourceImpl) bind UserRemoteDataSource::class
     singleOf(::FirebaseAuthDataSourceImpl) bind AuthRemoteDataSource::class
+    singleOf(::FirebaseExpenseDataSourceImpl) bind ExpenseDataSource::class
 }
